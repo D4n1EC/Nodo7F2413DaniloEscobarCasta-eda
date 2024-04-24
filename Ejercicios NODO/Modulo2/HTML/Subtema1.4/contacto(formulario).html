@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  
+    <title>Mi portafolio - Contacto</title>
+  </head>
+
+  <body>
+
+    <ul>
+      <li><a href="../Subtema1.3/index(Hipervinculos).html">Inicio</a></li>
+    </ul>
+
+
+    <h2>Formulario de Contacto</h2>
+      <p>
+        Los campos presedidos por un (*) son obligatorios
+      </p>
+    <form method="get">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label for="u-firtname">*Nombre: </label>
+        <input id="u-firstname" name="u-firstname" type="text" required/>
+        <br><br>
+        <label for="u-lastname">Apellidos: </label>
+        <input id="u-lastname" name="u-lastname" type="text"/>
+        <br><br>
+        <label>*Genero: </label>
+        <input id="u-gender--male" name="u-gender" type="radio" value="male"required />
+        <label for="u-gender--male">Hombre</label>
+        <input id="u-gender--female" name="u-gender" type="radio" value="female"required />
+        <label for="u-gender--female">Mujer</label>
+        <br><br>
+        <label for="u-email">*Correo electrónico: </label>
+        <input id="u-email" name="u-email" type="email" required />
+        <br><br>
+        <label for="u-tel">Teléfono: </label>
+        <input id="u-tel" name="u-tel" type="tel" placeholder="322 444 2233"
+          pattern="[0-9]{3} [0-9]{3} [0-9]{4}" />
+      </fieldset>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpiar formulario</button>
+    </form>
+  </body>
+
+</html>
