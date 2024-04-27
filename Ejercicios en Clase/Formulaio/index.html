@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url(https://th.bing.com/th/id/R.70063e6f7bec69796e8ef4f6a8995fee?rik=gyu%2fmnl%2fcyNDww&pid=ImgRaw&r=0);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        h3 {
+            color: #ffffff;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 35px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px #fff;
+        }
+
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #0f8ef7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Inscripción</h1>
+    <h3>Los campos con * son obligatorios</h3>
+    <form  method="post">
+
+        <label for="nombre">*Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Nombre"><br>
+
+        <label for="apellido">*Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required placeholder="Apellido"><br>
+
+        <label for="correo">*Correo:</label>
+        <input type="email" id="correo" name="correo" required placeholder="Correo@ejemplo.com"><br>
+
+        <label for="pais">*País de procedencia:</label>
+        <input type="text" id="pais" name="pais" required placeholder="País"><br>
+
+        <label for="telefono">Teléfono de contacto:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Numero de celular"><br>
+
+        <label for="carrera">*Carrera:</label>
+        <select id="carrera" name="carrera" required>
+            <option value="">Selecciona una carrera</option>
+            <option value="JOBS TO BE DONE">JOBS TO BE DONE</option>
+            <option value="CLOUD NATIVE">CLOUD NATIVE</option>
+            <option value="CLOUD NATIVE">FRONTEND</option>
+            <option value="CLOUD NATIVE">BACKEND</option>
+            <option value="CLOUD NATIVE">FUNDAMENTALS</option>
+            <option value="CLOUD NATIVE">PYTHON</option>
+            <option value="CLOUD NATIVE">MARKETING DIGITAL</option>
+            <option value="CLOUD NATIVE">CLOUD NATIVE</option>
+        </select><br>
+
+        <label for="modalidad">*Modalidad:</label><br>
+        <input type="radio" id="presencial" name="modalidad" value="Presencial" required>
+        <label for="presencial">Presencial</label>
+        <input type="radio" id="online" name="modalidad" value="Online" required>
+        <label for="online">Online</label><br><br>
+
+        <label for="descripcion">Descripción personal (máximo 300 caracteres):</label><br>
+        <textarea id="descripcion" name="descripcion" maxlength="300"></textarea><br>
+
+        <label for="trabajando">¿Estás trabajando actualmente?</label>
+        <input type="checkbox" id="trabajando" name="trabajando"><br><br>
+
+        <input type="submit" value="Enviar el formulario">
+        <input type="reset" value="Resetear el formulario">
+    </form>
+    <br><br><br>
+</body>
+</html>
