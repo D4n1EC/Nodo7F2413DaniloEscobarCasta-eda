@@ -1,0 +1,18 @@
+.main {
+    font-family: Tahoma;
+  }
+  
+  /* color for all paragraphs */
+  p {	color: #808080; }
+  
+  p:first-child {
+    color: black;
+  }
+  
+  .spaceships .primary { 
+    color: darkkhaki;
+  }
+  
+  /* Are IDs or Classes more specific? */
+  .spaceships ul li:last-child { color: #FF1493;}
+  ul li:last-child{ color: #FF4500; }
