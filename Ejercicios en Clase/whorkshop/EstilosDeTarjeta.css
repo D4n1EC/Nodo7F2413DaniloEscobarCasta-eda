@@ -1,0 +1,88 @@
+body {
+    background-image: url(https://media.istockphoto.com/photos/office-with-dark-wooden-walls-picture-id668431138?k=6&m=668431138&s=612x612&w=0&h=LToc3VJ5lynzKuKG0IYMQlipX4ViUwt9cOnid6V45MU=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+/* estios de la tarjeta de presentación */
+.tarjeta {
+    border: 10px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-image: url(https://th.bing.com/th/id/R.a7dbec05028a356559582dc7b32d2dcc?rik=9efXCYRIyzl1qQ&pid=ImgRaw&r=0);
+    opacity: 0.9;
+    height: 900px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+ 
+  
+  .tarjeta h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .tarjeta img {
+    border-radius: 50%;
+  }
+
+/* estilos del  currículum vitae*/
+h1 {
+    font-size: 200%;
+}
+.hoja {
+    border: 10px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-image: url(https://th.bing.com/th/id/R.a7dbec05028a356559582dc7b32d2dcc?rik=9efXCYRIyzl1qQ&pid=ImgRaw&r=0);
+    opacity: 0.95;
+    height: 100%;
+    width: 800px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+}
+
+
+.datosP {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    border: 5px solid #f9f9f9;
+    
+    grid-column: 1/2;
+}
+
+.datosP img {
+    border-radius: 100%;
+}
+
+.perfil {
+    grid-column: 2/3;
+}
+
+/* redes sociales, no tengo mas redes, es mas, ni uso facebook jjajajaja */
+.redes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px;
+}
+
+.youtube:hover img {
+    transform: scale(1.2);
+}
+
+
+
+.face:hover img {
+    transform: scale(1.2);
+}
+
+/* media queries*/
+
