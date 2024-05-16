@@ -3,6 +3,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 
 }
 /* estios de la tarjeta de presentación */
@@ -10,12 +14,12 @@ body {
     border: 10px solid #ccc;
     border-radius: 15px;
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
     background-image: url(https://th.bing.com/th/id/R.a7dbec05028a356559582dc7b32d2dcc?rik=9efXCYRIyzl1qQ&pid=ImgRaw&r=0);
     opacity: 0.9;
-    height: 900px;
-    width: 400px;
-    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
     text-align: center;
   }
 
@@ -32,46 +36,44 @@ body {
 
 /* estilos del  currículum vitae*/
 h1 {
-    font-size: 200%;
+    text-align: center;
 }
 .hoja {
     border: 10px solid #ccc;
     border-radius: 15px;
     padding: 20px;
-    margin-bottom: 20px;
     background-image: url(https://th.bing.com/th/id/R.a7dbec05028a356559582dc7b32d2dcc?rik=9efXCYRIyzl1qQ&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-size: cover;
     opacity: 0.95;
-    height: 100%;
-    width: 800px;
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 30px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
-
 .datosP {
+    margin-right: 10px;
     background-color: #f9f9f9;
     border-radius: 15px;
     border: 5px solid #f9f9f9;
-    
-    grid-column: 1/2;
+    text-align: center;
+
 }
 
 .datosP img {
     border-radius: 100%;
+
 }
 
-.perfil {
-    grid-column: 2/3;
-}
+
 
 /* redes sociales, no tengo mas redes, es mas, ni uso facebook jjajajaja */
 .redes {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); 
+    gap: 0px;
 }
 
 .youtube:hover img {
@@ -86,3 +88,14 @@ h1 {
 
 /* media queries*/
 
+@media (max-width: 769px) {
+    .tarjeta {
+        display: none;
+    }
+}
+@media (min-width: 770px){ 
+    .hoja {
+        display: none;
+
+}
+}
